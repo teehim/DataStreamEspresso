@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TkF-4v-flr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="haj-rd-co4">
+            <objects>
+                <viewController id="uG1-Eo-6rn" customClass="ObserveViewController" customModule="Patient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xUw-1P-Hfb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-Gh-pt3">
+                                <rect key="frame" x="106.5" y="429.5" width="201" height="37"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwm-RN-VHK">
+                                <rect key="frame" x="207" y="496.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N54-su-nun"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mwm-RN-VHK" firstAttribute="centerX" secondItem="xUw-1P-Hfb" secondAttribute="centerX" id="2nF-dH-V5N"/>
+                            <constraint firstItem="XgB-Gh-pt3" firstAttribute="centerY" secondItem="xUw-1P-Hfb" secondAttribute="centerY" id="DR1-Wf-Evc"/>
+                            <constraint firstItem="mwm-RN-VHK" firstAttribute="top" secondItem="XgB-Gh-pt3" secondAttribute="bottom" constant="30" id="SUd-hL-Dde"/>
+                            <constraint firstItem="XgB-Gh-pt3" firstAttribute="centerX" secondItem="xUw-1P-Hfb" secondAttribute="centerX" id="qDw-Xh-d0m"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="tUG-f3-Ngb"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="XgB-Gh-pt3" id="tgE-JM-8GE"/>
+                        <outlet property="eventLabel" destination="mwm-RN-VHK" id="qgZ-cR-Hhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1t-cX-qQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="151"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bfs-IP-uYr">
+            <objects>
+                <tabBarController id="TkF-4v-flr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kbv-3S-OXQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="m1x-QX-BN4"/>
+                        <segue destination="uG1-Eo-6rn" kind="relationship" relationship="viewControllers" id="C1v-Rj-NMf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fft-fF-Jzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1608" y="-152"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PatientViewController" customModule="Patient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-X5-fXi">
+                                <rect key="frame" x="123" y="364" width="168" height="168"/>
+                                <state key="normal" image="start-button"/>
+                                <connections>
+                                    <action selector="connectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ldY-LU-reW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jed-6h-MaM">
+                                <rect key="frame" x="72" y="74" width="270" height="98"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6Z-4x-shE">
+                                <rect key="frame" x="207" y="801" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6pN-X5-fXi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CWY-YJ-V3t"/>
+                            <constraint firstItem="6pN-X5-fXi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFo-HU-3f2"/>
+                            <constraint firstItem="H6Z-4x-shE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZUa-cl-Csw"/>
+                            <constraint firstItem="6pN-X5-fXi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gqt-y8-wyh"/>
+                            <constraint firstItem="jed-6h-MaM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ifF-kb-75x"/>
+                            <constraint firstItem="jed-6h-MaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q33-ge-7lm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H6Z-4x-shE" secondAttribute="bottom" constant="12" id="qP9-46-fAV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Y4g-Nu-o5S"/>
+                    <connections>
+                        <outlet property="sensorLabel" destination="H6Z-4x-shE" id="bsv-95-P6q"/>
+                        <outlet property="statusLabel" destination="jed-6h-MaM" id="26q-4l-11x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684.05797101449275" y="-569.19642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="start-button" width="168" height="168"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
